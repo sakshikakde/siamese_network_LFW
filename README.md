@@ -21,7 +21,7 @@ A pretrained model can be downloaded from [here](https://drive.google.com/file/d
 1) For sanity check, run the following command:    
 ``` python3 inference.py```     
 2) You will get an output as follows:
-
+![alt test](https://github.com/sakshikakde/siamese_network_LFW/blob/main/images/inference.png)
 
 ## TO DO 
 Analyse the predicted output
