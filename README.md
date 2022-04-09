@@ -1,4 +1,4 @@
-# siamese network for LFW 
+# Siamese network for LFW 
 ## Data generation
 
 1) Download the data from [here](http://vis-www.cs.umass.edu/lfw/lfw.tgz) and extract it to 'data' folder
@@ -7,6 +7,8 @@
 
 A 'images_list.txt' file will be created in 'data' folder.
 
+## Model Details 
+TO DO
 ## Training
 1) Run the following command:    
 ``` python3 main.py```
@@ -14,4 +16,13 @@ A 'images_list.txt' file will be created in 'data' folder.
 
 ### Model
 A pretrained model can be downloaded from [here](https://drive.google.com/file/d/10Dawy1RakjSFz786Xny6TTSqWk8lD329/view?usp=sharing).
+
+## Inference
+1) For sanity check, run the following command:    
+``` python3 inference.py```     
+2) You will get an output as follows:
+
+
+## TO DO 
+Analyse the predicted output
 
