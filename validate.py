@@ -1,6 +1,6 @@
 from common_utils import *
 
-def validate(model, device, val_loader, criterion):
+def val_epoch(model, device, val_loader, criterion):
     model.eval()
 
     losses = AverageMeter()

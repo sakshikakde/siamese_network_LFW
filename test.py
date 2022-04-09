@@ -1,6 +1,6 @@
 from common_utils import *
 
-def test(model, device, test_loader, criterion):
+def test_epoch(model, device, test_loader, criterion):
     model.eval()
 
     losses = AverageMeter()
