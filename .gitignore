@@ -6,5 +6,4 @@
 *.avi
 /snapshots
 /saliency
-/models
 /tf_logs
