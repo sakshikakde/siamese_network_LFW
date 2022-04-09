@@ -20,7 +20,7 @@ class SiameseNet(nn.Module):
         self.fc2 = nn.Linear(256, 2)
 
 
-    def net(self,x):
+    def feature_extractor(self,x):
         x = self.pool(self.bn1(F.relu(self.conv1(x))))
         x = self.pool(self.bn2(F.relu(self.conv2(x))))
         x = self.pool(self.bn3(F.relu(self.conv3(x))))
@@ -38,7 +38,7 @@ class SiameseNet(nn.Module):
     def forward(self, x):
         x1 = x[:, 0:3, :, :]
         x2 = x[:, 3:6, :, :]
-        output1 = self.net(x1)
-        output2 = self.net(x2)
-        sim = self.similarity(output1, output2)
+        fv1 = self.feature_extractor(x1)
+        fv2 = self.feature_extractor(x2)
+        sim = self.similarity(fv1, fv2)
         return sim
