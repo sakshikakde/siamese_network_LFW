@@ -1,6 +1,7 @@
 from common_utils import *
 from data_utils import *
 from dataset.lfw import LFW_dataset
+from models.siamese_model import SiameseNet as Net
 
 def log_data_info(train_dataloader, val_dataloader, test_dataloader):
     print("input dimensions are:", train_dataloader.dataset[0][0].shape)
